@@ -1,7 +1,7 @@
 {% set name = "cmocka" %}
-{% set version = "1.1.5" %}
+{% set version = "1.1.6" %}
 {% set version_major_minor = ".".join(version.split('.')[:2]) %}
-{% set so_version = "0.7.0" %}
+{% set so_version = "0.8.0" %}
 
 package:
   name: {{ name }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://cmocka.org/files/{{ version_major_minor }}/{{ name }}-{{ version }}.tar.xz
-  sha256: f0ccd8242d55e2fd74b16ba518359151f6f8383ff8aef4976e48393f77bba8b6
+  sha256: 5b3283038ddee236e7cb410ff217a31e66a651674838eb51a8ff0e1eba737a76
 
 build:
   number: 0
