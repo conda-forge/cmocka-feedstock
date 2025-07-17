@@ -1,7 +1,7 @@
 {% set name = "cmocka" %}
 {% set version = "1.1.8" %}
 {% set version_major_minor = ".".join(version.split('.')[:2]) %}
-{% set so_version = "0.8.0" %}
+{% set so_version = "0.8.1" %}
 
 package:
   name: {{ name }}
