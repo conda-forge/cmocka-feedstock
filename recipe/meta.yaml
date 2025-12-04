@@ -41,7 +41,7 @@ about:
   home: https://cmocka.org/
   license: Apache-2.0
   license_family: Apache
-  license_file: COPYING
+  license_file: LICENSE
   summary: An elegant unit testing framework for C with support for mock objects.
 
   description: |
