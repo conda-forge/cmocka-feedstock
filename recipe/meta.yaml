@@ -1,23 +1,22 @@
-{% set name = "cmocka" %}
 {% set version = "2.0.0" %}
 {% set version_major_minor = ".".join(version.split('.')[:2]) %}
 {% set so_version = "1.0.0" %}
 
 package:
-  name: {{ name }}
+  name: cmocka
   version: {{ version }}
 
 source:
-  url: https://cmocka.org/files/{{ version_major_minor }}/{{ name }}-{{ version }}.tar.xz
+  url: https://cmocka.org/files/{{ version_major_minor }}/cmocka-{{ version }}.tar.xz
   sha256: b5686c51ea92d142958d68e5dcb932f9bfc32cd3dd01c524f9d4aa863ebc3d9c
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # No correlation between library name and
     # so names
     # https://gitlab.com/cmocka/cmocka/-/issues/43
-    - {{ pin_subpackage(name, max_pin='x.x.x') }}
+    - {{ pin_subpackage("cmocka", max_pin='x.x.x') }}
 
 requirements:
   build:
