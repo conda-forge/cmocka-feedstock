@@ -1,9 +1,9 @@
-
+set -ex
 
 mkdir build
 cd build
 
-cmake -LAH                             \
+cmake ${CMAKE_ARGS} -LAH               \
     -DCMAKE_PREFIX_PATH=${PREFIX}      \
     -DCMAKE_INSTALL_PREFIX=${PREFIX}   \
     -DCMAKE_INSTALL_LIBDIR="lib"       \
