@@ -7,6 +7,6 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cmocka:
-- 2.0.0
+- 2.0.1
 target_platform:
 - win-64

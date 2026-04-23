@@ -1,4 +1,4 @@
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 {% set version_major_minor = ".".join(version.split('.')[:2]) %}
 {% set so_version = "1.0.1" %}
 
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://cmocka.org/files/{{ version_major_minor }}/cmocka-{{ version }}.tar.xz
-  sha256: 3f3533382ba29ab3abf5c4f4b27b79d165f0df51ea587de749b11b68b4019180
+  sha256: 39f92f366bdf3f1a02af4da75b4a5c52df6c9f7e736c7d65de13283f9f0ef416
 
 build:
   number: 0
